@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menuItemBeta"
+        android:showAsAction="always|withText"
+        android:title="beta" />
+  <!--      android:icon="@drawable/beta" /> -->
+    <item
+        android:id="@+id/menuItemGamma"
+        android:showAsAction="always|withText"
+        android:title="gamma" />
+
+    <!-- Soll ein Item in der App Bar angezeigt werden, so muss ihm folgendes Attribut hingefügt werden:
+             android:showAsAction="always|withText".
+             Zudem muss in styles.xml als grundlegendes Theme der Applikation z.B. "android:Theme.Holo.Light" gewählt werden -
+             also ein Theme, das App Bars unterstützt. Soll (auf älteren Geräten) das Menu allein über den Menu Button angezeigt werden,
+             also keine App Bar, so muss man ebenfalls ein entsprechendes Theme wählen - z.B. "android:Theme.Holo.NoActionBar".
+             In der App Bar kann man statt eines Texts ein Icon anzeigen lassen. Das geschieht im <item>-Element über das icon-Attribut,
+             wie es oben auskommentiert zu sehen ist.
+             Icons findet man unter https://material.io/icons/
+        -->
+
+</menu>

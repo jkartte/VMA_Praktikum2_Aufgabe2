@@ -1,0 +1,4 @@
+de/thkoeln/cvogt/android/menus/BuildConfig.java
+ de.thkoeln.cvogt.android.menus.BuildConfig
+de/thkoeln/cvogt/android/menus/MainActivity.java
+ de.thkoeln.cvogt.android.menus.MainActivity

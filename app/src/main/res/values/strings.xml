@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Menus</string>
+    <string name="activity_alpha_title">Activity Alpha - VMA TH Köln</string>
+    <string name="activity_beta_title">Activity Beta - VMA TH Köln</string>
+    <string name="activity_gamma_title">Activity Gamma - VMA TH Köln</string>
+    <string name="activity_alpha">Activity Alpha</string>
+    <string name="activity_beta">Activity Beta</string>
+    <string name="activity_gamma">Activity Gamma</string>
+    <string name="operand">Operand 1, Operand 2:</string>
+    <string name="rechne">Rechne!</string>
+</resources>
