@@ -54,26 +54,31 @@ public class MainActivity extends Activity {
     }
 
     public boolean onOptionsItemSelected(MenuItem item) {
-        double eingabe1 = Double.parseDouble(operand1.getText().toString());
-        double eingabe2 = Double.parseDouble(operand2.getText().toString());
-        double ergebnis = 0.0;
-        String operator = "";
+        if (operand1.getText().length() == 0 || operand2.getText().length() == 0) {
+            Toast.makeText(MainActivity.this, "Falsche Eingabe!", Toast.LENGTH_SHORT).show();
+        }
+        else {
+            double eingabe1 = Double.parseDouble(operand1.getText().toString());
+            double eingabe2 = Double.parseDouble(operand2.getText().toString());
+            double ergebnis = 0.0;
+            String operator = "";
 
-        if (item.getItemId()==R.id.op_addition){
-            ergebnis = eingabe1 + eingabe2;
-            operator = " + ";
-        }
-        if (item.getItemId()==R.id.op_multiplikation){
-            ergebnis = eingabe1 * eingabe2;
-            operator = " * ";
-        }
-        if (item.getItemId()==R.id.op_subtraktion){
-            ergebnis = eingabe1 - eingabe2;
-            operator = " - ";
-        }
-        String ausgabe = eingabe1 + operator + eingabe2 + " = " + ergebnis;
-        Toast.makeText(MainActivity.this, ausgabe, Toast.LENGTH_SHORT).show();
 
+            if (item.getItemId() == R.id.op_addition) {
+                ergebnis = eingabe1 + eingabe2;
+                operator = " + ";
+            }
+            if (item.getItemId() == R.id.op_multiplikation) {
+                ergebnis = eingabe1 * eingabe2;
+                operator = " * ";
+            }
+            if (item.getItemId() == R.id.op_subtraktion) {
+                ergebnis = eingabe1 - eingabe2;
+                operator = " - ";
+            }
+            String ausgabe = eingabe1 + operator + eingabe2 + " = " + ergebnis;
+            Toast.makeText(MainActivity.this, ausgabe, Toast.LENGTH_SHORT).show();
+        }
         return true;
     }
 
@@ -86,22 +91,26 @@ public class MainActivity extends Activity {
     }
 
     public boolean onContextItemSelected(MenuItem item) {
-        double eingabe1 = Double.parseDouble(operand1.getText().toString());
-        double eingabe2 = Double.parseDouble(operand2.getText().toString());
-        double ergebnis = 0.0;
-        String operator = "";
-
-        if (item.getItemId()==R.id.addition){
-            ergebnis = eingabe1 + eingabe2;
-            operator = " + ";
+        if (operand1.getText().length() == 0 || operand2.getText().length() == 0) {
+            Toast.makeText(MainActivity.this, "Falsche Eingabe!", Toast.LENGTH_SHORT).show();
         }
-        if (item.getItemId()==R.id.multiplikation){
-            ergebnis = eingabe1 * eingabe2;
-            operator = " * ";
-        }
-        String ausgabe = eingabe1 + operator + eingabe2 + " = " + ergebnis;
-        Toast.makeText(MainActivity.this, ausgabe, Toast.LENGTH_SHORT).show();
+        else {
+            double eingabe1 = Double.parseDouble(operand1.getText().toString());
+            double eingabe2 = Double.parseDouble(operand2.getText().toString());
+            double ergebnis = 0.0;
+            String operator = "";
 
+            if (item.getItemId() == R.id.addition) {
+                ergebnis = eingabe1 + eingabe2;
+                operator = " + ";
+            }
+            if (item.getItemId() == R.id.multiplikation) {
+                ergebnis = eingabe1 * eingabe2;
+                operator = " * ";
+            }
+            String ausgabe = eingabe1 + operator + eingabe2 + " = " + ergebnis;
+            Toast.makeText(MainActivity.this, ausgabe, Toast.LENGTH_SHORT).show();
+        }
         return true;
     }
 

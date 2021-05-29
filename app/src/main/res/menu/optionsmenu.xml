@@ -4,14 +4,14 @@
 
     <item
         android:id="@+id/op_addition"
-        android:title="Addition"
+        android:title="+"
         android:showAsAction="always|withText"/>
     <item
         android:id="@+id/op_multiplikation"
-        android:title="Multiplikation"
+        android:title="*"
         android:showAsAction="always|withText"/>
     <item
         android:id="@+id/op_subtraktion"
-        android:title="Subtraktion"
+        android:title="-"
         android:showAsAction="always|withText"/>
 </menu>
